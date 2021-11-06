@@ -5,9 +5,10 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   build: {
+    outDir: 'lib',
     lib: {
-      entry: './src/Button.tsx',
-      name: 'lib',
+      entry: './src/index.tsx',
+      formats: ['es'],
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
