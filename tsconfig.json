@@ -16,7 +16,8 @@
     "jsx": "react-jsx",
     "declaration": true,
     "emitDeclarationOnly": true,
-    "declarationDir": "lib-types"
+    "declarationDir": "lib-types",
+    "types": ["vite/client"]
   },
   "include": ["./src"]
 }
