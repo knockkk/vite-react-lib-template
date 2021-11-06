@@ -15,7 +15,9 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "types": ["vite/client"],
-    "noEmit": true
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationDir": "lib-types"
   },
-  "include": ["src", "example"]
+  "include": ["src"]
 }
