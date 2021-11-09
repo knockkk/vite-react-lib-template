@@ -14,7 +14,7 @@ const Example = () => {
       }}
     >
       <h1>Example</h1>
-      <Button onClick={() => alert('click me')}>Click me!</Button>
+      <Button onClick={() => alert('biu~')}>Send</Button>
     </div>
   );
 };

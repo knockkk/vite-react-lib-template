@@ -1,16 +1,25 @@
-@prefix-cls: x;
+@prefix-cls: send;
 @primary-color: #096dd9;
+@font-color: #fff;
 
 .@{prefix-cls} {
   &-button {
+    display: flex;
+    align-items: center;
     height: 40px;
     padding: 6px 15px;
     font-size: 16px;
     border-radius: 2px;
     border: 1px solid transparent;
     background: @primary-color;
-    color: #fff;
+    color: @font-color;
     cursor: pointer;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 4px;
+    }
 
     &:hover {
       opacity: 0.8;
