@@ -1,3 +1,4 @@
+import { ReactComponent as SendSvg } from './send.svg';
 import './index.less';
 
 interface Props {
@@ -5,12 +6,13 @@ interface Props {
   children?: React.ReactNode;
 }
 
-const Button = ({ onClick, children }: Props) => {
+const SendButton = ({ onClick, children }: Props) => {
   return (
-    <button onClick={onClick} className='x-button'>
+    <button onClick={onClick} className='send-button'>
+      <SendSvg />
       {children}
     </button>
   );
 };
 
-export default Button;
+export default SendButton;
