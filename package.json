@@ -5,7 +5,8 @@
   "types": "./lib-types/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -p tsconfig.build.json && vite build",
+    "build": "yarn tsc-build && vite build",
+    "tsc-build": "rm -rf lib-types && tsc -p tsconfig.build.json",
     "lint": "tsc && eslint . --ext '.js,.jsx,.ts,.tsx'"
   },
   "peerDependencies": {
