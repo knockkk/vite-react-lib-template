@@ -1,14 +1,23 @@
 {
   "name": "vite-react-lib-template",
   "version": "0.0.0",
+  "description": "",
+  "author": {
+    "name": ""
+  },
   "license": "MIT",
   "module": "./lib/index.es.js",
   "types": "./lib/index.d.ts",
+  "files": [
+    "lib",
+    "src"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build && tsc -p tsconfig.build.json",
     "lint": "tsc && eslint . --ext '.js,.jsx,.ts,.tsx'",
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage"
   },
   "peerDependencies": {
     "react": ">=17.0.0",

@@ -1,9 +1,19 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 import Button from '../src';
 
-it('button should render', () => {
-  const { queryByText } = render(<Button>click</Button>);
+describe('button', () => {
+  it('button should render', () => {
+    const { queryByText } = render(<Button>click</Button>);
 
-  expect(queryByText('click')).toBeTruthy();
+    expect(queryByText('click')).toBeTruthy();
+  });
+
+  it('onClick should work', () => {
+    const onClick = jest.fn();
+    const { queryByText } = render(<Button onClick={onClick}>click</Button>);
+
+    fireEvent.click(queryByText('click'));
+    expect(onClick).toHaveBeenCalled();
+  });
 });
