@@ -17,7 +17,11 @@
     "build": "vite build && tsc -p tsconfig.build.json",
     "lint": "tsc && eslint . --ext '.js,.jsx,.ts,.tsx'",
     "test": "jest",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "postinstall": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,jsx}": "npm run lint"
   },
   "peerDependencies": {
     "react": ">=17.0.0",
@@ -40,6 +44,7 @@
     "eslint": "^8.2.0",
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2.1-alpha-327d5c484-20211106",
+    "husky": "^7.0.4",
     "jest": "^27.3.1",
     "less": "^4.1.2",
     "react": "^17.0.0",
