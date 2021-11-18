@@ -18,7 +18,7 @@
     "lint": "tsc && eslint . --ext '.js,.jsx,.ts,.tsx'",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "postinstall": "husky install"
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{js,ts,tsx,jsx}": "npm run lint"
