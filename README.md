@@ -39,5 +39,5 @@ import 'x-button/lib/style.css'; // 引入对应的CSS文件
 4. 支持函数及组件的测试
 5. Eslint、Prettier 配置，提交 commit 时自动进行语法检查
 
-关于模版的更多信息可参考 👉[Vite初体验-用它开发前端库真不戳！](https://juejin.cn/post/7050743861492056078/)
+关于模版的更多信息可参考 👉[使用 Vite 开发前端库实践](https://juejin.cn/post/7050743861492056078/)
 
